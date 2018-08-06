@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "fileTypes": [
+    "ini",
+    "ini.append",
+    "ini.append.php"
+  ],
+  "foldingStartMarker": "/\\*\\*|\\{\\s*$",
+  "foldingStopMarker": "\\*\\*/|^\\s*\\}",
+  "name": "ini",
+  "patterns": [
+    {
+      "match": "^\\[.+\\]",
+      "name": "keyword.control.ini"
+    },
+    {
+      "begin": "#",
+      "end": "$",
+      "name": "comment.line.ini"
+    },
+    {
+      "match": "\\b(true|false|enabled|disabled)\\b",
+      "name": "constant.language.ini"
+    },
+    {
+      "begin": "\\[",
+      "contentName": "support.array.ini",
+      "end": "\\]"
+    },
+    {
+      "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b",
+      "name": "constant.numeric.ini"
+    },
+    {
+      "begin": "=",
+      "contentName": "variable.ini",
+      "end": "\\n"
+    },
+    {
+      "begin": "\"",
+      "end": "\"",
+      "name": "string.quoted.double.ini",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escaped.untitled"
+        }
+      ]
+    }
+  ],
+  "scopeName": "text.ini"
+}

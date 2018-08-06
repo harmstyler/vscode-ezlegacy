@@ -1,0 +1,66 @@
+{
+  ".source.eztpl": {
+    "{...|attribute(show)}": {
+      "prefix": "show",
+      "body": "{$${1:node}|attribute(show,${2:1})}",
+      "description": "Code snippet to show the attributes of a varible"
+    },
+    "{...|dump()}": {
+      "prefix": "dump",
+      "body": "{$${1:var_to_dump}|dump('${2:show}',${3:1},'${4:html}')}"
+    },
+    "{switch match=...}": {
+      "prefix": "switch",
+      "body": "{switch match=$${1:match}}\n\t{case match=\"${2}\"}\n\t\t${3}\n\t{/case}\n{/switch}",
+      "description": "Code snippet for the switch statment"
+    },
+    "{set $foo = 'bar'}": {
+      "prefix": "set",
+      "body": "{set $${1:variable} = ${2:value}}"
+    },
+    "{def $foo = 'bar'}": {
+      "prefix": "def",
+      "body": "{def $${1:variable} = ${2:value}}"
+    },
+    "{include uri=\"\"}": {
+      "prefix": "include",
+      "body": "{include uri=\"design:${1:template}.tpl\"}"
+    },
+    "{foreach $array as $item}": {
+      "prefix": "foreach",
+      "body": "{foreach $${1:array} as $${2:item}}\n\t${3}\n{/foreach}"
+    },
+    "{cache-block}": {
+      "prefix": "cache-block",
+      "body": "{cache-block keys=${1:keys} expiry=${2:3600} ${3:ignore_content_expiry} subtree_expiry=${4:<path>}}",
+      "description": "Code snippet for a cache-block"
+    },
+    "{case}": {
+      "prefix": "case",
+      "body": "{case match=${1:value}}"
+    },
+    "{attribute_view_gui}": {
+      "prefix": "attribute_view_gui",
+      "body": "{attribute_view_gui attribute=$${1:attribute}${<2></2>}}",
+      "description": "Code snippet for the Attribute View Gui"
+    },
+    "{delimiter}": {
+      "prefix": "delimiter",
+      "body": "{delimiter}$1{/delimiter}"
+    },
+    "{fetch}": {
+      "prefix": "fetch",
+      "body": "fetch( '${1:content}', '${2:list}',\n\thash( '${3:parent_node_id}','${4:node_id}' ))",
+      "description": "Code snippet for a fetch statement"
+    },
+    "{if}": {
+      "prefix": "if",
+      "body": "{if ${1:condition}}\n\t${0}\n{/if}",
+      "description": "Code snippet for an if statement"
+    },
+    "{section}": {
+      "prefix": "section",
+      "body": "{section ${1:arguments}}\n\t${0}\n{/section}"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+    "name": "eztpl",
+    "displayName": "vscode-eztpl",
+    "description": "Syntax highlighting & snippets for the eZ Templating language",
+    "version": "0.0.1",
+    "publisher": "harmstyler",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "keywords": [
+        "eZ Legacy",
+        "language-ezlegacy",
+        "eztpl",
+        "eZ Publish"
+    ],
+    "homepage": "https://github.com/harmstyler/vscode-ezlegacy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/harmstyler/vscode-ezlegacy"
+    },
+    "bugs": {
+        "url": "https://github.com/harmstyler/vscode-ezlegacy/issues"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "eztpl",
+                "aliases": [
+                    "HTML (eZtpl)",
+                    "eztpl",
+                    "eZ Tpl"
+                ],
+                "extensions": [
+                    ".tpl"
+                ],
+                "configuration": "./eztpl.configuration.json"
+            },
+            {
+                "id": "ezini",
+                "aliases": [
+                    "INI (eZ)",
+                    "ezini"
+                ],
+                "extensions": [
+                    ".ini",
+                    ".ini.append",
+                    ".ini.append.php"
+                ],
+                "configuration": "./ezini.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "eztpl",
+                "scopeName": "source.tpl",
+                "path": "./syntaxes/eztpl.tmLanguage"
+            },
+            {
+                "language": "ezini",
+                "scopeName": "source.ini",
+                "path": "./syntaxes/ini.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "eztpl",
+                "path": "./snippets/ezlegacy.json"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
