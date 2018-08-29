@@ -2,7 +2,7 @@
     "name": "eztpl",
     "displayName": "vscode-eztpl",
     "description": "Syntax highlighting & snippets for the eZ Templating language",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "harmstyler",
     "icon": "images/ez_logo.png",
     "engines": {
