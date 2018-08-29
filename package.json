@@ -4,6 +4,7 @@
     "description": "Syntax highlighting & snippets for the eZ Templating language",
     "version": "0.1.1",
     "publisher": "harmstyler",
+    "icon": "images/ez_logo.png",
     "engines": {
         "vscode": "^1.25.0"
     },
