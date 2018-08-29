@@ -74,9 +74,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(eq|ne|gt|lt|ge|le|null|not|even|odd|not|by|as|max|offset|reverse|sequence)\b</string>
+			<string>\b(eq|ne|gt|lt|ge|le|null|not|even|odd|by|as|max|offset|reverse|sequence)\b</string>
 			<key>name</key>
-			<string>keyword.operator.other.tpl</string>
+			<string>keyword.operator.word.tpl</string>
 		</dict>
 		<dict>
 			<key>match</key>
