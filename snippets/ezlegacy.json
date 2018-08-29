@@ -32,16 +32,16 @@
     },
     "{cache-block}": {
       "prefix": "cache-block",
-      "body": "{cache-block keys=${1:keys} expiry=${2:3600} ${3:ignore_content_expiry} subtree_expiry=${4:<path>}}",
+      "body": "{cache-block keys=${1:keys} expiry=${2:3600} ${3:ignore_content_expiry} subtree_expiry=${4:<path>}}\n\t${5}\n{/cache-block}",
       "description": "Code snippet for a cache-block"
     },
     "{case}": {
       "prefix": "case",
-      "body": "{case match=${1:value}}"
+      "body": "{case match=${1:value}}\n\t${2}\n{/case}"
     },
     "{attribute_view_gui}": {
       "prefix": "attribute_view_gui",
-      "body": "{attribute_view_gui attribute=$${1:attribute}${<2></2>}}",
+      "body": "{attribute_view_gui attribute=$${1:attribute}}",
       "description": "Code snippet for the Attribute View Gui"
     },
     "{delimiter}": {
@@ -61,6 +61,10 @@
     "{section}": {
       "prefix": "section",
       "body": "{section ${1:arguments}}\n\t${0}\n{/section}"
+    },
+    "cond( cond1, value1 [, cond2, value2 [, ... ] ] )": {
+      "prefix": "cond",
+      "body": "cond( ${1:cond1}, ${2:val} )"
     }
   }
 }

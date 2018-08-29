@@ -16,7 +16,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(as|def|else|elseif|foreach|if|switch|while|for|let|literal|section|section-else|undef)\b</string>
+			<string>\b(as|def|else|elseif|foreach|if|switch|while|for|let|literal|section|section-else|undef|cond)\b</string>
 			<key>name</key>
 			<string>keyword.control.tpl</string>
 		</dict>
@@ -74,13 +74,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(eq|ne|gt|lt|ge|le|null|not|even|odd|not|mod|div|by|as|max|offset|reverse|sequence)\b</string>
+			<string>\b(eq|ne|gt|lt|ge|le|null|not|even|odd|not|by|as|max|offset|reverse|sequence)\b</string>
 			<key>name</key>
 			<string>keyword.operator.other.tpl</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(append|array|attribute|break|contains|continue|datetime|downcase|count|date_format|default|delimiter|explode|extract|ezhttp|ezhttp_hasvariable|ezimage|ezurl|ezroot|float|get_class|get_type|implode|indent|int|merge|nl2br|prepend|replace|simplify|skip|shorten|string_format|strip_tags|strip|trim|upcase|variable|wash|inc|sub|true|false)\b</string>
+			<string>\b(append|array|attribute|break|contains|continue|datetime|downcase|count|date_format|default|delimiter|explode|extract|ezhttp|ezhttp_hasvariable|ezimage|ezurl|ezroot|float|get_class|get_type|implode|indent|int|merge|nl2br|prepend|replace|simplify|skip|shorten|string_format|strip_tags|strip|trim|upcase|variable|wash|inc|sub|true|false|abs|ceil|dec|mod|div|rand)\b</string>
 			<key>name</key>
 			<string>support.function.variable-modifier.tpl</string>
 		</dict>
