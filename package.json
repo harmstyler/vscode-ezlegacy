@@ -6,7 +6,7 @@
     "publisher": "harmstyler",
     "icon": "images/ez_logo.png",
     "engines": {
-        "vscode": "^1.25.0"
+        "vscode": "^1.33.0"
     },
     "keywords": [
         "eZ Legacy",
@@ -72,16 +72,5 @@
                 "path": "./snippets/ezlegacy.json"
             }
         ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.10.2",
-        "eslint": "^4.11.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.29"
     }
 }
